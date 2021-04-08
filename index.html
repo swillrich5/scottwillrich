@@ -1,85 +1,108 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-
-        <title>Scott Willrich</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
-    <body>
-        <main>
-            <!-- Name and navigation bar -->
-            <header>
-                <div class="flex-container nav-container">
-                    <h1>Scott Willrich</h1>
-                    <ul class="navigation-bar flex-container">
-                        <li><a href="#about-me">About Me</a></li>
-                        <li><a href="#my-work">My Work</a></li>
-                        <li><a href="#contact-me">Contact</a></li>
-                    </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">                
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Scott Willrich</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand pl-3 lead" href="#">Scott Willrich</a>
+          </div>
+          <div class="">
+            <a href="#" class="px-3">About Me</a>
+            <a href="#" class="px-3">My Work</a>
+            <a href="#" class="px-3">Contact</a>
+            <a href="#" class="px-3">Resume</a>
+          </div>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <div class="jumbotron ">
+            <div class="row justfy-content-around">
+                <div class="col">
+                    <img src="./assets/images/Scott.jpg" class="rounded-circle float-left" alt="...">
                 </div>
-
-            </header> 
-            <!-- Hero div includes hero image, picture of myself and cool phrase -->
-            <div class="hero-container flex-container">
-                <figure class="image-container">
-                    <img src="./assets/images/Scott.jpg" alt="picture of Scott Wilrich">
-                </figure>
-                <h3 class="cool-subtitle">
-                    Aspiring Full Stack Web Developer
-                </h4>
+                <div class="col">
+                    <h3 class="display-4">Aspiring Full Stack Web Developer</h3>
+                </div>
             </div>
-            <!-- Section includes "About Me"and "Work" sections -->
-            <section>
-                <div class="flex-container aboutme-container">
-                    <h2 id="about-me">About Me</h2>
-                    <p>Making the leap to a second career in web development after spending the last 23 years as the CIO of Texas Municipal Retirement System.  While I have a degree in Computer Science from the University of Texas at Austin, I'm currently refreshing my software development skills in the University of Texas Coding Boot Camp. After completion of the boot camp, I'm seeking either a part-time or full-time entry-level web developer position.  Please see my contact info below.</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row about-me-row justify-content-around">
+                <div id="about-me-title-div" class="col-lg-3">
+                    <h3 class="display-4">About Me</h3>
                 </div>
-                <div class="flex-container mywork-container">
-                    <h2 id="my-work">My Work</h2>   
-                    <div class="my-apps-container">
-                        <figure class="first-app flex-container">
-                            <a href="https://swillrich5.github.io/Horiseon-refactor/"><img src="assets/images/Horiseon-refactor.jpg" alt="link to Horiseon Refactor application"></a>
-                            <div class="app-name">
-                                <a href="https://swillrich5.github.io/Horiseon-refactor/"><p>Horiseon Social Solution Services<br>HTML / CSS</p></a>
+                <div id="about-me-content-div" class="col-lg-8">
+                    <p>Making the leap to a second career in web development after spending the last 23 years as the CIO of Texas Municipal Retirement System. While I have a degree in Computer Science from the University of Texas at Austin, I'm currently refreshing my software development skills in the University of Texas Coding Boot Camp. After completion of the boot camp, I'm seeking either a part-time or full-time entry-level web developer position. Please see my contact info below.</p>                </div>
+            </div>
+            <div class="row my-work-row  justify-content-around">
+                <div id="my-work-title-div" class="col-lg-3">
+                    <h3 class="display-4">My Work</h3>
+                </div>
+                <div id="my-work-content-div" class="col-lg-8">
+                    <div class="row justify-content-around">
+                        <div class="card col-sm-12 col-md-5">
+                            <img class="card-img-top" src="./assets/images/filmbank.png" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Film Bank</h4>
+                              <p class="card-text">Provides information on movies including description, cast, moview review, and where it's streaming.</p>
+                              <a href="https://github.com/swillrich5/filmbank" class="btn btn-primary mr-3">Github</a>
+                              <a href="https://swillrich5.github.io/filmbank/" class="btn btn-primary">FilmBank</a>
                             </div>
-                        </figure>
-                        <div class="flex-container otherapps-row">
-                            <figure class="other-app-container">
-                                <a href="https://swillrich5.github.io/willrich-portfolio/"><img src="./assets/images/willrich_portfolio.jpg" alt="link to this portfolio site"><p id="portfolio">Willrich Portfolio<br>HTML / CSS</p></a>
-                            </figure>
-                            <figure class="other-app-container">
-                                <a href="https://swillrich5.github.io/prework-about-me/"><img src="./assets/images/pre-work.jpg" alt="link to UT Coding Boot Camp Pre-Work"><p id="pre-work">UT Coding Boot Camp Prework<br>HTML</p></a>
-                            </figure>
                         </div>
-                        <!-- Since I'm just beginning, more apps will be added later -->
-                        <div class="flex-container otherapps-row">
-                            <figure class="other-app-container">
-                                <a href="#"><img src="./assets/images/more_css.jpg" alt=""><p id="coming-soon">Coming Soon</p></a>
-                            </figure>
-                            <figure class="other-app-container">
-                                <a href=""><img src="./assets/images/even_more_html.jpg" alt=""><p id="coming-soon2">Coming Soon</p></a>
-                            </figure>                    
+                        <div class="card col-sm-12 col-md-5">
+                            <img class="card-img-top" src="./assets/images/weatherdashboard.png" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Weather Dashboard</h4>
+                              <p class="card-text">Current conditions and five-day forecast for cities around the world.</p>
+                              <a href="https://github.com/swillrich5/weather-dashboard" class="btn btn-primary mr-3">Github</a>
+                              <a href="https://swillrich5.github.io/weather-dashboard" class="btn btn-primary">Weather Dashboard</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- Footer contains "Contact Me information" -->
-            <footer>
-                <div id="contact-me" class="flex-container contactme-container">
-                    <h2>Contact Me</h2>
-                    <div class="contact-info-container">
-                        <ul class="contact-info">
-                            <li><a href="tel:512-867-5309">512-867-5309</a></li>
-                            <li><a href="mailto:swillrich@gmail.com">swillrich@gmail.com</a></li>
-                            <li><a href="https://github.com/swillrich5">GitHub</a></li>
-                            <li><a href="https://twitter.com/swillrich">Twitter</a></li>
-                        </ul>                    
-                    </div>
-                </div>
-            </footer>
-            </main>
-    </body>
+                    <div class="row justify-content-around">
+                        <div class="card col-sm-12 col-md-5">
+                            <img class="card-img-top" src="./assets/images/passwordgenerator.png" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Password Generator</h4>
+                              <p class="card-text">Based on criteria from the user (password size, character sets to include), a random password is created.</p>
+                              <a href="https://github.com/swillrich5/password-generator" class="btn btn-primary mr-3">Github</a>
+                              <a href="https://swillrich5.github.io/password-generator" class="btn btn-primary">Password Generator</a>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-5">
+                            <img class="card-img-top" src="./assets/images/workdayscheduler.png" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Work Day Scheduler</h4>
+                              <p class="card-text">An application to help plan out your day.</p>
+                              <a href="https://github.com/swillrich5/work-day-scheduler" class="btn btn-primary mr-3">Github</a>
+                              <a href="https://swillrich5.github.io/work-day-scheduler" class="btn btn-primary">Work Day Scheduler</a>
+                            </div>
+                        </div>
+                    </div>                
+                </div>    
+            </div>        
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row contact-row justify-content-around">
+            <div id="contact-title-div" class="col-lg-3">
+                <h3 class="display-4">Contact</h3>
+            </div>
+            <div id="contact-content-div" class="col-lg-8 justify-content-around">
+                <div><a href="tel:512-867-5309">512-867-5309</a></div>
+                <div><a href="mailto:swillrich@gmail.com">swillrich@gmail.com</a></div>
+                <div><a href="https://github.com/swillrich5">GitHub</a></div>
+                <div ><a href="https://twitter.com/swillrich" >Twitter</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script></body>
 </html>

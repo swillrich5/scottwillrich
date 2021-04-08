@@ -11,448 +11,212 @@
 /* Mobile first design - first set of tags apply to mobile version */
 /* See below for tags that override for tablet and larger displays */
 
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
-    max-width: 1024px; 
-    margin-left: auto;
-    margin-right: auto;
- }
-
- h1 {
-     font-size: 2.5rem;
- }
-
- h2 {
-    font-size: 2.25rem;
-} 
-
-h3 {
-    font-size: 2rem;
-} 
-
-h4 {
-    font-size: 1.75rem;
-} 
-
-p {
-    font-size: 1.1rem;
-    line-height: 1.15;
-}
-
-header, section, footer {
-    margin: 0;
-    padding: 20px;
-    color: var(--ice-blue);
-}
-
-header {
-    display: flex;
-    flex-direction: column;
     background-color: var(--slate-blue);
+    padding: 0px;
+    margin: 0px;
+    color: var(--ice-blue);
 }
 
-section {
-    background-color: #76b5c5;
-}
 
-section h2 {
-    width: 100%;
+.jumbotron {
+    background-image: url("../images/floorboards.jpg");
+    height: 450px;
+    color: var(--ice-blue);
     text-align: center;
-    padding-bottom: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-bottom: 5px solid var(--ice-blue);
 }
 
-footer {
+.container-fluid {
+    padding: 0px;
+    background-color: var(--slate-blue);
+    margin: 0px;
+    color: var(--ice-blue);
+}
+
+nav {
+    color: var(--ice-blue);
+}
+
+nav a {
+    font-size: 25px;
+    color: var(--ice-blue);
+}
+
+.navbar-brand {
+    font-size: 40px;
+
+}
+
+.jumbotron img {
+    height: 200px;
+    margin-left: 125px;
+}
+
+main {
+    background-color: var(--slate-blue); 
+    color: var(--ice-blue);   
+}
+
+.about-me-row {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.my-work-row {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.contact-row {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+#about-me-title-div {
+    text-align: center;
+}
+
+#my-work-title-div {
+    text-align: center;
+}
+
+#contact-title-div {
+    text-align: center;
+}
+
+#about-me-content-div p {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#about-me-content-div {
+    border-top: 10px solid var(--ice-blue);
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+#my-work-content-div {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-top: 10px solid var(--ice-blue);
+}
+
+#contact-content-div {
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    border-top: 10px solid var(--ice-blue);
+}
+
+
+.card {
     background-color: var(--dark-blue);
+    width: 400px;
+    margin: 20px;
+    padding-top: 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.flex-container {
+#contact-content-div  {
+    font-size: 20px;
+    color: var(--ice-blue);
+    text-decoration: none;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;       
 }
 
-/* ---------------  navigation section tags --------------- */
-
-.nav-container {
-    display: block;
-    align-items: stretch;
-    justify-content: space-between;
-    padding-bottom: 15px;
-}
-
-.navigation-bar li {
-    padding-top: 10px;
-}
-
-.navigation-bar a {
-    margin: 20px;
-    color: var(--ice-blue);
-    text-decoration: none;
-}
-
-.navigation-bar li a:hover {
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-/* ---------------  Hero section tags --------------- */
-
-.hero-container {
-    color: var(--ice-blue);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-image: url("../images/floorboards.jpg");
-}
-
-.hero-container img {
-    border-radius: 50%;
-    margin-left: 10px;
-    padding-bottom: 5px;
-}
-
-.my-apps-container {
-    display: block;
-    padding: 10px;
-    border-left: none;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* ---------------  work secion tags --------------- */
-
-.first-app {
-    position: relative;
-}
-
-.first-app img {
-    flex-shrink: 1;
-    width: 400px;
-    height: 150px;
-}
-
-.app-name {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: var(--ice-blue);
-    border-radius: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.app-name p {
-    text-align: center;
-    color: var(--dark-blue);
-}
-
-.app-name a {
-    text-decoration: none;
-}
-
-#portfolio {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    border-radius: 5px;
-    padding: 6px;
-} 
-
-p#portfolio {
-    text-decoration: none;
-    text-align: center;
-    background-color: var(--ice-blue);
-    color: var(--dark-blue);
-}
-
-#pre-work {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    border-radius: 5px;
-    padding: 6px;
-} 
-
-p#pre-work {
-    text-decoration: none;
-    text-align: center;
-    background-color: var(--ice-blue);
-    color: var(--dark-blue);
-}
-
-#coming-soon {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    border-radius: 5px;
-    padding: 6px;    
-    visibility: visible;
-}
-
-#coming-soon:hover {
-    visibility: hidden;
-}
-
-p#coming-soon {
-    text-decoration: none;
-    text-align: center;
-    background-color: var(--ice-blue);
-    color: var(--dark-blue);
-}
-
-#coming-soon2 {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    border-radius: 5px;
-    padding: 6px;    
-    visibility: visible;
-}
-
-#coming-soon2:hover {
-    visibility: hidden;
-}
-
-p#coming-soon2 {
-    text-decoration: none;
-    text-align: center;
-    background-color: var(--ice-blue);
-    color: var(--dark-blue);
-}
-
-.other-app-container {
-    display: inline-block;
-    position: relative;
-    margin-right: 5px;
-    width: 100%;
-}
-
-.other-app-container img {
-    margin-top: 5px;
-}
-
-.other-app-container img {
-    width: 400px;
-    height: 150px;
-}
-
-.contact-info li {
-    padding-top: 10px;
-}
-
-.contact-info li a {
-    color: var(--ice-blue);
-    text-decoration: none;
-}
-
-.contact-info li a:hover {
+#contact-content-div a:hover {
     font-weight: bold;
-    font-size: 20px;
-}
-.contactme-container {
-    margin-bottom: 20px;
 }
 
-/* ---------------  footer secion tags --------------- */
-
-footer h2 {
-    padding-bottom: 2px;
-    border-bottom: 5px solid var(--ice-blue);
+#contact-content-div  a {
+    color: var(--ice-blue);
 }
 
 ul {
-    list-style-type: none;
+    justify-content: space-around;
 }
 
-/* ----------------------------------------------------- */
-/* ----------  Tags For Larger Screens Below  ---------- */
-/* ----------------------------------------------------- */
+#page-bottom {
+    margin-bottom: 50px;
+}
 
-/* media query for larger screens - tablets */
+
 @media screen and (min-width: 768px) {
 
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-    }    
-
-/* ---------------  nav secion tags --------------- */
-
-    .nav-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-    }
-
-    .hero-container {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content:space-around;
-    }
-
-    .navigation-bar {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-/* ---------------  hero section tags --------------- */
-
-    .cool-subtitle {
-        margin-bottom: 25px;
-    }
-
-
-/* -----------  main content section tags ----------- */
-
-    section h2 {
-        display: inline;
-        float: left;
-        height: 100%;
-        max-width: 100px;
-        min-height: 100px;
-        text-align: right;
-        padding-right: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-
-    section p {
-        display: block;
-        padding-left: 10px;
-        text-align: left;
-    }
-
-    section img {
-        border: 3px solid var(--slate-blue);
+    .jumbotron img {
+        height: 250px;
+        margin-left: 175px;
     }
     
-/* ---------------  about me section tags --------------- */
 
-    .aboutme-container {
-        /* height: 185px; */
-        margin-right: 25px;
-        margin-bottom: 20px;
-        /* min-height: 100px; */
-    }
+}
 
-    .aboutme-container h2 {
-        min-width: 200px;
-        min-height: 100%;
-        text-align: right;
-        padding-right: 10px;
-        border-bottom: none;
-        margin-right: 10px;
-    }
 
-    .aboutme-container p {
-        border-left: 5px solid var(--ice-blue);
-    }
 
-/* ---------------  work section tags --------------- */
-    
-    .first-app {
-        margin-right: 5px;
-    }
+@media screen and (min-width: 992px) {
 
-    .first-app img {
-        flex-shrink: 1;
-        width: 800px;
+    .jumbotron img {
         height: 300px;
-        filter: blur(2px);
-        transition: 0.3s all ease-in-out; 
+        margin-left: 175px;
     }
 
-    .first-app img:hover {
-        filter: blur(0px);
-        transform: scale(1.01);
+    .about-me-row {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .my-work-row {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .contact-row {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    #about-me-title-div {
+        text-align: right;
+    }
+
+    #my-work-title-div {
+        text-align: right;
+    }
+
+    #contact-title-div {
+        text-align: right;
+    }
+
+    #about-me-content-div {
+        border-left: 10px solid var(--ice-blue);
+        border-top: none;
+        padding-left: 30px;
     }
     
-    .other-app-container img {
-        width: 400px;
-        height: 150px;
-        filter: blur(2px);
-        transition: 0.3s all ease-in-out;
+    #my-work-content-div {
+        border-left: 10px solid var(--ice-blue);
+        border-top: none;
+        /* margin-left: 20px; */
+        padding-left: 30px;
     }
-
-    .other-app-container img:hover {
-        filter: blur(0px);
-        transform: scale(1.01);
-    }
-
-    .other-app-container {
-        display: inline;
-        width: 50%;
-    }
-
-    .mywork-container {
-        display: flex;
-        margin-bottom: 20px;
-    }
-
-    .mywork-container h2 {
-        min-width: 200px;
-        min-height: 100%;
-        text-align: right;
-        padding-right: 10px;
-        border-bottom: none;
-        margin-right: 10px;
-    }
-
-    .my-apps-container {
-        display: flex;
-        flex-wrap: wrap;
-        border-left: 5px solid var(--ice-blue);
-    }
-
-    .contactme-container {
-        display: flex;
-        margin-bottom: 20px;
-    }
-
-    .contact-info-container {
-        width: 100%;
+    
+    #contact-content-div {
+        border-left: 10px solid var(--ice-blue);
+        border-top: none;
+        padding-left: 30px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        border-left: 5px solid var(--ice-blue);
+     
     }
 
-    .contact-info {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-left: 10px;
-    }
-
-    .contactme-container h2 {
-        min-width: 200px;
-        min-height: 50px;
-        text-align: right;
-        padding-right: 10px;
-        border-bottom: none;
-        margin-right: 10px;
-    }
-
-    .contact-info li a {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }
