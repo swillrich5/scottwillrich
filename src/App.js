@@ -1,11 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar';
+import Home from './Pages/Home';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <h3>Welcome to Safari Country</h3>
-      <h5>Buckle up for safety!!!</h5>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
